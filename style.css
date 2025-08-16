@@ -1,3 +1,64 @@
 i, button{
     cursor: pointer;
 }
+
+#bos{
+    background-color: #0d0714;
+    width: 100%;
+    height: 100vh;
+}
+.uniquee{
+    background-color: #15101C;
+}
+
+span{
+    color: #9E78CF;
+}
+
+i{
+    color: #9E78CF;
+}
+
+.btn{
+    background-color: #9E78CF;
+    color: white;
+}
+
+#edit, #text{
+    background-color: transparent;
+    border: 1px solid #3E1671;
+    outline: none;
+    color: #777777;
+}
+
+#edit, #text::placeholder{
+    color: #777777;
+}
+
+#done{
+    span{
+        color: #78CFB0;
+        text-decoration: line-through;
+    }
+    i{
+        display: none;
+    }
+    .soat{
+        display: none;
+    }
+    
+}
+
+h1{
+    color: #FFFFFF;
+    margin: 2rem 0;
+}
+
+.lists, #done{
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.lists, #done::-webkit-scrollbar{
+    display: none;
+}
