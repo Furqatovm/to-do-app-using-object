@@ -46,6 +46,9 @@ i{
     .soat{
         display: none;
     }
+    .uniquee, div:last-child{
+        display: block;
+    }
     
 }
 

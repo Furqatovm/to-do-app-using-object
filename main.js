@@ -4,8 +4,9 @@ let none = document.getElementById("none");
 let done =document.getElementById("done");
 let wrapAll =document.getElementById("bos")
 
-let data = [];
-// let text = document.getElementById("text");
+let storedData =localStorage.getItem("todos");
+let data = storedData ? JSON.parse(storedData) : [];
+addUI(data)
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -18,13 +19,12 @@ form.addEventListener("submit", (e) => {
     addUI(data);
     none.classList.add("d-none");
   }
-  // console.log(form.name.value);
-  // console.log(data);
+
 });
 
-// click dblclick submit
 
 function addUI(data) {
+  localStorage.setItem("todos", JSON.stringify(data));
   lists.innerHTML = "";
   done.innerHTML = "";
   data.forEach((element) => {
