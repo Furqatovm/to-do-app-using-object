@@ -47,7 +47,7 @@ function addUI(data) {
       <div class ="d-flex gap-4">
         <i id="${element.id}" class="fa-solid fa-pen"></i>
         <i id="${element.id}" class="fa-solid fa-check"></i>
-        <i id="${element.id}" class="fa-solid fa-trash-can"></i>
+        <i id="${element.id}" class="fa-solid fa-trash-can del"></i>
       </div>
     `;
     if (element.Done){

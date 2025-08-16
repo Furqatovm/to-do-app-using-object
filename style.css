@@ -46,7 +46,7 @@ i{
     .soat{
         display: none;
     }
-    .uniquee, div:last-child{
+    .uniquee .del{
         display: block;
     }
     
